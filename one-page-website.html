@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Adventures</title>
+    <!-- Lightbox2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+        }
+        section {
+            padding: 20px;
+            margin: 20px 0;
+        }
+        section h2 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+            <a href="#videos">Videos</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to Travel Adventures</h1>
+        <p>Discover breathtaking destinations, exciting travel stories, and get inspired for your next adventure.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Explore Our Travel Gallery</h2>
+        <a href="https://via.placeholder.com/800x600" data-lightbox="gallery" data-title="Destination 1">
+            <img src="https://via.placeholder.com/400x300" alt="Destination 1">
+        </a>
+        <a href="https://via.placeholder.com/800x600" data-lightbox="gallery" data-title="Destination 2">
+            <img src="https://via.placeholder.com/400x300" alt="Destination 2">
+        </a>
+        <a href="https://via.placeholder.com/800x600" data-lightbox="gallery" data-title="Destination 3">
+            <img src="https://via.placeholder.com/400x300" alt="Destination 3">
+        </a>
+    </section>
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <form action="/submit-form" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <section id="videos">
+        <h2>Watch Our Travel Videos</h2>
+        <iframe width="560" height="315" src="https://youtu.be/HcdohhNq8Iw?si=hpZcEJORkonY2cbo" allowfullscreen></iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Travel Adventures. All rights reserved.</p>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a> | 
+        <a href="https://www.twitter.com" target="_blank">Twitter</a> | 
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    </footer>
+
+    <!-- Lightbox2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+</html>
